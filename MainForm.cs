@@ -36,5 +36,29 @@ namespace Компьютерная_графика2
             Show();
             Activate();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ProgramData.form3.StartPosition = FormStartPosition.Manual;
+            ProgramData.form3.Location = new Point(Location.X, Location.Y);
+
+            Hide();
+            ProgramData.form3.ShowDialog();
+
+            Show();
+            Activate();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ProgramData.form4.StartPosition = FormStartPosition.Manual;
+            ProgramData.form4.Location = new Point(Location.X, Location.Y);
+
+            Hide();
+            ProgramData.form4.ShowDialog();
+
+            Show();
+            Activate();
+        }
     }
 }
