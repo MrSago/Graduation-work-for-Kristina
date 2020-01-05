@@ -16,7 +16,7 @@ namespace Компьютерная_графика2
             ProgramData.mainForm.StartPosition = FormStartPosition.Manual;
             ProgramData.mainForm.Location = new Point(Location.X, Location.Y);
 
-            Close();
+            Hide();
         }
     }
 }

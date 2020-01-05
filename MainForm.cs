@@ -22,7 +22,7 @@ namespace Компьютерная_графика2
             ProgramData.form1.ShowDialog();
             
             Show();
-            Activate();
+            Select();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace Компьютерная_графика2
             ProgramData.form2.ShowDialog();
 
             Show();
-            Activate();
+            Select();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace Компьютерная_графика2
             ProgramData.form3.ShowDialog();
 
             Show();
-            Activate();
+            Select();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace Компьютерная_графика2
             ProgramData.form4.ShowDialog();
 
             Show();
-            Activate();
+            Select();
         }
     }
 }

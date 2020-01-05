@@ -39,7 +39,7 @@ namespace Компьютерная_графика2
         private void button2_Click(object sender, EventArgs e)
         {
             axAcroPDF1.src = "none";
-            Close();
+            Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
