@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Компьютерная_графика2
@@ -68,6 +69,36 @@ namespace Компьютерная_графика2
                     WindowState = FormWindowState.Maximized;
                 }
             }
+        }
+
+        private void тест1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProgramData.testForm.StartPosition = FormStartPosition.Manual;
+            ProgramData.testForm.Location = new Point(Location.X, Location.Y);
+
+            string testName = (sender as ToolStripMenuItem).Text + ".test";
+            ProgramData.testForm.InitTest(testName);
+
+            Hide();
+            ProgramData.testForm.ShowDialog();
+
+            Show();
+            Select();
+        }
+
+        private void тест2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProgramData.testForm.StartPosition = FormStartPosition.Manual;
+            ProgramData.testForm.Location = new Point(Location.X, Location.Y);
+
+            string testName = (sender as ToolStripMenuItem).Text + ".test";
+            ProgramData.testForm.InitTest(testName);
+
+            Hide();
+            ProgramData.testForm.ShowDialog();
+
+            Show();
+            Select();
         }
     }
 }

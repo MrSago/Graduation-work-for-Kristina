@@ -53,6 +53,8 @@
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
             this.button3 = new System.Windows.Forms.Button();
+            this.тест1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.тест2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
             this.SuspendLayout();
@@ -181,6 +183,9 @@
             // 
             // тестыToolStripMenuItem
             // 
+            this.тестыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.тест1ToolStripMenuItem,
+            this.тест2ToolStripMenuItem});
             this.тестыToolStripMenuItem.Name = "тестыToolStripMenuItem";
             this.тестыToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.тестыToolStripMenuItem.Text = "Тесты";
@@ -237,6 +242,20 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // тест1ToolStripMenuItem
+            // 
+            this.тест1ToolStripMenuItem.Name = "тест1ToolStripMenuItem";
+            this.тест1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.тест1ToolStripMenuItem.Text = "Тест №1";
+            this.тест1ToolStripMenuItem.Click += new System.EventHandler(this.тест1ToolStripMenuItem_Click);
+            // 
+            // тест2ToolStripMenuItem
+            // 
+            this.тест2ToolStripMenuItem.Name = "тест2ToolStripMenuItem";
+            this.тест2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.тест2ToolStripMenuItem.Text = "Тест №2";
+            this.тест2ToolStripMenuItem.Click += new System.EventHandler(this.тест2ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,5 +305,7 @@
         private System.Windows.Forms.ToolTip toolTip3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.FormWindowState prevState;
+        private System.Windows.Forms.ToolStripMenuItem тест1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem тест2ToolStripMenuItem;
     }
 }
