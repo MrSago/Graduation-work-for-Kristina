@@ -13,11 +13,13 @@ namespace Компьютерная_графика2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ProgramData.mainForm.StartPosition = FormStartPosition.Manual;
-            ProgramData.mainForm.Location = new Point(Location.X, Location.Y);
+            MainForm mainForm = new MainForm();
+
+            mainForm.StartPosition = FormStartPosition.Manual;
+            mainForm.Location = new Point(Location.X, Location.Y);
 
             Hide();
-            ProgramData.mainForm.ShowDialog();
+            mainForm.ShowDialog();
             Close();
         }
     }

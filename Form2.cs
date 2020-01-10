@@ -6,15 +6,18 @@ namespace Компьютерная_графика2
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        public MainForm parentForm;
+
+        public Form2(Form form)
         {
+            parentForm = form as MainForm;
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ProgramData.mainForm.StartPosition = FormStartPosition.Manual;
-            ProgramData.mainForm.Location = new Point(Location.X, Location.Y);
+            parentForm.StartPosition = FormStartPosition.Manual;
+            parentForm.Location = new Point(Location.X, Location.Y);
 
             Hide();
         }

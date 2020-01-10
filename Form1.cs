@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -13,7 +14,7 @@ namespace Компьютерная_графика2
 
         private void axAcroPDF1_Enter(object sender, EventArgs e)
         {
-            axAcroPDF1.LoadFile($"{ProgramData.resDir}\\Welcome.pdf");
+            axAcroPDF1.LoadFile($"{Directory.GetCurrentDirectory()}\\Resources\\Welcome.pdf");
         }
 
         /// <summary>
@@ -22,7 +23,7 @@ namespace Компьютерная_графика2
         private void openPdfToolStripClick(object sender, EventArgs e)
         {
             string pdfName = (sender as ToolStripMenuItem).Text;
-            string pdfDir = $"{ProgramData.resDir}\\{pdfName}.pdf";
+            string pdfDir = $"{Directory.GetCurrentDirectory()}\\Resources\\{pdfName}.pdf";
 
             if (axAcroPDF1.src != pdfDir)
             {
@@ -73,14 +74,18 @@ namespace Компьютерная_графика2
 
         private void тест1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProgramData.testForm.StartPosition = FormStartPosition.Manual;
-            ProgramData.testForm.Location = new Point(Location.X, Location.Y);
+            TestForm testForm = new TestForm();
+
+            testForm.StartPosition = FormStartPosition.Manual;
+            testForm.Location = new Point(Location.X, Location.Y);
 
             string testName = (sender as ToolStripMenuItem).Text + ".test";
-            ProgramData.testForm.InitTest(testName);
+            testForm.InitTest(testName);
 
             Hide();
-            ProgramData.testForm.ShowDialog();
+            testForm.ShowDialog();
+            testForm.Close();
+            testForm = null;
 
             Show();
             Select();
@@ -88,14 +93,18 @@ namespace Компьютерная_графика2
 
         private void тест2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProgramData.testForm.StartPosition = FormStartPosition.Manual;
-            ProgramData.testForm.Location = new Point(Location.X, Location.Y);
+            TestForm testForm = new TestForm();
+
+            testForm.StartPosition = FormStartPosition.Manual;
+            testForm.Location = new Point(Location.X, Location.Y);
 
             string testName = (sender as ToolStripMenuItem).Text + ".test";
-            ProgramData.testForm.InitTest(testName);
+            testForm.InitTest(testName);
 
             Hide();
-            ProgramData.testForm.ShowDialog();
+            testForm.ShowDialog();
+            testForm.Close();
+            testForm = null;
 
             Show();
             Select();

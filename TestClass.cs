@@ -2,6 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Компьютерная_графика2
 {
@@ -30,7 +31,7 @@ namespace Компьютерная_графика2
         public TestClass(String fileName)
         {
             List<Question> NewListQuestions = new List<Question>();
-            StreamReader streamReader = new StreamReader($"{ProgramData.resDir}\\{fileName}", Encoding.UTF8);
+            StreamReader streamReader = new StreamReader($"{Directory.GetCurrentDirectory()}\\Resources\\{fileName}", Encoding.UTF8);
             FileName = fileName;
             String str = streamReader.ReadLine();
 
@@ -43,7 +44,14 @@ namespace Компьютерная_графика2
             }
             catch (Exception e)
             {
-                ProgramData.mainForm.Close();
+                MessageBox.Show(
+                    e.ToString(),
+                    "Exception error!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information,
+                    MessageBoxDefaultButton.Button1,
+                    MessageBoxOptions.DefaultDesktopOnly
+                );
             }
 
             str = streamReader.ReadLine();

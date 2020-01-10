@@ -13,13 +13,18 @@ namespace Компьютерная_графика2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ProgramData.form1.StartPosition = FormStartPosition.Manual;
-            ProgramData.form1.Location = new Point(Location.X, Location.Y);
-            ProgramData.form1.Size = Size;
-            ProgramData.form1.WindowState = FormWindowState.Normal;
+            Form1 form1 = new Form1();
+
+            form1.StartPosition = FormStartPosition.Manual;
+            form1.Location = new Point(Location.X, Location.Y);
+
+            form1.Size = Size;
+            form1.WindowState = FormWindowState.Normal;
 
             Hide();
-            ProgramData.form1.ShowDialog();
+            form1.ShowDialog();
+            form1.Close();
+            form1 = null;
             
             Show();
             Select();
@@ -27,11 +32,15 @@ namespace Компьютерная_графика2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ProgramData.form2.StartPosition = FormStartPosition.Manual;
-            ProgramData.form2.Location = new Point(Location.X, Location.Y);
+            Form2 form2 = new Form2(this);
+
+            form2.StartPosition = FormStartPosition.Manual;
+            form2.Location = new Point(Location.X, Location.Y);
 
             Hide();
-            ProgramData.form2.ShowDialog();
+            form2.ShowDialog();
+            form2.Close();
+            form2 = null;
 
             Show();
             Select();
@@ -39,11 +48,15 @@ namespace Компьютерная_графика2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ProgramData.form3.StartPosition = FormStartPosition.Manual;
-            ProgramData.form3.Location = new Point(Location.X, Location.Y);
+            Form3 form3 = new Form3();
+
+            form3.StartPosition = FormStartPosition.Manual;
+            form3.Location = new Point(Location.X, Location.Y);
 
             Hide();
-            ProgramData.form3.ShowDialog();
+            form3.ShowDialog();
+            form3.Close();
+            form3 = null;
 
             Show();
             Select();
@@ -51,11 +64,15 @@ namespace Компьютерная_графика2
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ProgramData.form4.StartPosition = FormStartPosition.Manual;
-            ProgramData.form4.Location = new Point(Location.X, Location.Y);
+            Form4 form4 = new Form4();
+
+            form4.StartPosition = FormStartPosition.Manual;
+            form4.Location = new Point(Location.X, Location.Y);
 
             Hide();
-            ProgramData.form4.ShowDialog();
+            form4.ShowDialog();
+            form4.Close();
+            form4 = null;
 
             Show();
             Select();
