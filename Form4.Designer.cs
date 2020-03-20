@@ -122,6 +122,5 @@
         private System.Windows.Forms.ToolTip toolTip3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolTip toolTip2;
-        private System.Windows.Forms.FormWindowState prevState;
     }
 }

@@ -128,8 +128,8 @@ namespace Компьютерная_графика2
 
         private void TestForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            testClass = null;
             qControls = null;
+            testClass = null;
             yOffSet = 3;
             panel1.Controls.Clear();
         }

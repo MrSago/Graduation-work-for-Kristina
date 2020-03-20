@@ -201,7 +201,6 @@
             this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
             this.axAcroPDF1.Size = new System.Drawing.Size(800, 423);
             this.axAcroPDF1.TabIndex = 3;
-            this.axAcroPDF1.Enter += new System.EventHandler(this.axAcroPDF1_Enter);
             // 
             // button1
             // 
@@ -304,7 +303,6 @@
         private System.Windows.Forms.ToolStripMenuItem растровыйРедакторGIMPToolStripMenuItem;
         private System.Windows.Forms.ToolTip toolTip3;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.FormWindowState prevState;
         private System.Windows.Forms.ToolStripMenuItem тест1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem тест2ToolStripMenuItem;
     }

@@ -12,9 +12,15 @@ namespace Компьютерная_графика2
             InitializeComponent();
         }
 
-        private void axAcroPDF1_Enter(object sender, EventArgs e)
+        public void SetWelcomePage()
         {
-            axAcroPDF1.LoadFile($"{Directory.GetCurrentDirectory()}\\Resources\\Welcome.pdf");
+            string pdfDir = $"{Directory.GetCurrentDirectory()}\\Resources\\Welcome.pdf";
+
+            if (axAcroPDF1.src != pdfDir)
+            {
+                axAcroPDF1.LoadFile(pdfDir);
+                axAcroPDF1.setShowToolbar(false);
+            }
         }
 
         /// <summary>
@@ -28,13 +34,12 @@ namespace Компьютерная_графика2
             if (axAcroPDF1.src != pdfDir)
             {
                 axAcroPDF1.LoadFile(pdfDir);
+                axAcroPDF1.setShowToolbar(false);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            prevState = WindowState;
-
             if (WindowState == FormWindowState.Normal)
             {
                 WindowState = FormWindowState.Maximized;
@@ -53,23 +58,7 @@ namespace Компьютерная_графика2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            prevState = WindowState;
-
-            if (WindowState != FormWindowState.Minimized)
-            {
-                WindowState = FormWindowState.Minimized;
-            }
-            else
-            {
-                if (prevState == FormWindowState.Normal)
-                {
-                    WindowState = FormWindowState.Normal;
-                }
-                else
-                {
-                    WindowState = FormWindowState.Maximized;
-                }
-            }
+            WindowState = FormWindowState.Minimized;
         }
 
         private void тест1ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -84,30 +73,13 @@ namespace Компьютерная_графика2
 
             Hide();
             testForm.ShowDialog();
-            testForm.Close();
-            testForm = null;
 
             Show();
-            Select();
         }
 
         private void тест2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TestForm testForm = new TestForm();
 
-            testForm.StartPosition = FormStartPosition.Manual;
-            testForm.Location = new Point(Location.X, Location.Y);
-
-            string testName = (sender as ToolStripMenuItem).Text + ".test";
-            testForm.InitTest(testName);
-
-            Hide();
-            testForm.ShowDialog();
-            testForm.Close();
-            testForm = null;
-
-            Show();
-            Select();
         }
     }
 }

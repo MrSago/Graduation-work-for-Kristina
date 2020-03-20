@@ -13,69 +13,48 @@ namespace Компьютерная_графика2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            StaticForms.form1.StartPosition = FormStartPosition.Manual;
+            StaticForms.form1.Location = new Point(Location.X, Location.Y);
 
-            form1.StartPosition = FormStartPosition.Manual;
-            form1.Location = new Point(Location.X, Location.Y);
-
-            form1.Size = Size;
-            form1.WindowState = FormWindowState.Normal;
+            StaticForms.form1.SetWelcomePage();
 
             Hide();
-            form1.ShowDialog();
-            form1.Close();
-            form1 = null;
+            StaticForms.form1.ShowDialog();
             
             Show();
-            Select();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2(this);
-
-            form2.StartPosition = FormStartPosition.Manual;
-            form2.Location = new Point(Location.X, Location.Y);
+            StaticForms.form2.StartPosition = FormStartPosition.Manual;
+            StaticForms.form2.Location = new Point(Location.X, Location.Y);
 
             Hide();
-            form2.ShowDialog();
-            form2.Close();
-            form2 = null;
+            StaticForms.form2.ShowDialog();
 
             Show();
-            Select();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
-
-            form3.StartPosition = FormStartPosition.Manual;
-            form3.Location = new Point(Location.X, Location.Y);
+            StaticForms.form3.StartPosition = FormStartPosition.Manual;
+            StaticForms.form3.Location = new Point(Location.X, Location.Y);
 
             Hide();
-            form3.ShowDialog();
-            form3.Close();
-            form3 = null;
+            StaticForms.form3.ShowDialog();
 
             Show();
-            Select();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
-
-            form4.StartPosition = FormStartPosition.Manual;
-            form4.Location = new Point(Location.X, Location.Y);
+            StaticForms.form4.StartPosition = FormStartPosition.Manual;
+            StaticForms.form4.Location = new Point(Location.X, Location.Y);
 
             Hide();
-            form4.ShowDialog();
-            form4.Close();
-            form4 = null;
+            StaticForms.form4.ShowDialog();
 
             Show();
-            Select();
         }
     }
 }
