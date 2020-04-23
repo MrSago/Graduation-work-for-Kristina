@@ -55,7 +55,6 @@ namespace Компьютерная_графика2
         [STAThread]
         static void Main()
         {
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 

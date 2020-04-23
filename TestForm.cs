@@ -23,8 +23,6 @@ namespace Компьютерная_графика2
             {
                 QControl control = InitQControl(id);
 
-                control.textBox.Text = testClass.ListQuestions[id].question;
-
                 for (Int32 n = 0; n < testClass.ListQuestions[id].answers.Count; ++n)
                 {
                     control.checkedListBox.Items.Add(testClass.ListQuestions[id].answers.ElementAt(n));
@@ -58,11 +56,12 @@ namespace Компьютерная_графика2
             qControl.textBox.BorderStyle = BorderStyle.None;
             qControl.textBox.Font = new Font("Microsoft Sans Serif", 13F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(204)));
             qControl.textBox.Location = new Point(3, yOffSet);
-            yOffSet += 20;
             qControl.textBox.Multiline = true;
             qControl.textBox.Name = "QtextBox" + qControls.Count.ToString();
             qControl.textBox.ReadOnly = true;
-            qControl.textBox.Size = new Size(750, 18);
+            qControl.textBox.Text = testClass.ListQuestions[id].question;
+            qControl.textBox.Size = new Size(750, 20 * (qControl.textBox.Text.Length / 50 + 1));
+            yOffSet += 20 * (qControl.textBox.Text.Length / 50 + 1);
             //qControl.textBox.TabIndex = 2;
             panel1.Controls.Add(qControl.textBox);
 
