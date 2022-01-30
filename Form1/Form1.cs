@@ -1,6 +1,7 @@
-﻿using System;
-using System.IO;
+﻿
+using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Компьютерная_графика2
@@ -26,7 +27,7 @@ namespace Компьютерная_графика2
         /// <summary>
         /// События кнопок.
         /// </summary>
-        private void openPdfToolStripClick(object sender, EventArgs e)
+        private void OpenPdfToolStripClick(object sender, EventArgs e)
         {
             string pdfName = (sender as ToolStripMenuItem).Text;
             string pdfDir = $"{Directory.GetCurrentDirectory()}\\Resources\\{pdfName}.pdf";
@@ -38,7 +39,7 @@ namespace Компьютерная_графика2
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
             {
@@ -50,18 +51,18 @@ namespace Компьютерная_графика2
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             axAcroPDF1.src = "none";
             Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
-        private void тест1ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Тест1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TestForm testForm = new TestForm();
 
@@ -77,9 +78,10 @@ namespace Компьютерная_графика2
             Show();
         }
 
-        private void тест2ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Тест2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
     }
 }
+

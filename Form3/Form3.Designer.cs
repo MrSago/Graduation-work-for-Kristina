@@ -51,7 +51,7 @@
             this.button1.TabIndex = 9;
             this.toolTip1.SetToolTip(this.button1, "Развернуть");
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // axAcroPDF1
             // 
@@ -64,7 +64,7 @@
             this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
             this.axAcroPDF1.Size = new System.Drawing.Size(800, 423);
             this.axAcroPDF1.TabIndex = 8;
-            this.axAcroPDF1.Enter += new System.EventHandler(this.axAcroPDF1_Enter);
+            this.axAcroPDF1.Enter += new System.EventHandler(this.AxAcroPDF1_Enter);
             // 
             // button3
             // 
@@ -77,7 +77,7 @@
             this.button3.TabIndex = 11;
             this.toolTip3.SetToolTip(this.button3, "Свернуть");
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button2
             // 
@@ -90,7 +90,7 @@
             this.button2.TabIndex = 10;
             this.toolTip2.SetToolTip(this.button2, "Назад");
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Form3
             // 

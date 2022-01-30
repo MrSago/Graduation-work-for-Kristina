@@ -3,19 +3,19 @@ using System.Windows.Forms;
 
 namespace Компьютерная_графика2
 {
-    public partial class Form4 : Form
+    public partial class Form3 : Form
     {
-        public Form4()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        private void axAcroPDF1_Enter(object sender, EventArgs e)
+        private void AxAcroPDF1_Enter(object sender, EventArgs e)
         {
             axAcroPDF1.LoadFile("none");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
             {
@@ -27,13 +27,13 @@ namespace Компьютерная_графика2
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             axAcroPDF1.src = "none";
             Hide();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }

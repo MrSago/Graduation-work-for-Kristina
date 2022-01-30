@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Windows.Forms;
 
 namespace Компьютерная_графика2
@@ -10,9 +11,10 @@ namespace Компьютерная_графика2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             Hide();
         }
     }
 }
+

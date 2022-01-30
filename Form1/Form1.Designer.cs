@@ -88,28 +88,28 @@
             this.введениеВКомпьютернуюГрафикуToolStripMenuItem.Name = "введениеВКомпьютернуюГрафикуToolStripMenuItem";
             this.введениеВКомпьютернуюГрафикуToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
             this.введениеВКомпьютернуюГрафикуToolStripMenuItem.Text = "Введение в компьютерную графику";
-            this.введениеВКомпьютернуюГрафикуToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.введениеВКомпьютернуюГрафикуToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // растроваяГрафикаToolStripMenuItem
             // 
             this.растроваяГрафикаToolStripMenuItem.Name = "растроваяГрафикаToolStripMenuItem";
             this.растроваяГрафикаToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
             this.растроваяГрафикаToolStripMenuItem.Text = "Растровая графика";
-            this.растроваяГрафикаToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.растроваяГрафикаToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // векторнаяГрафикаToolStripMenuItem
             // 
             this.векторнаяГрафикаToolStripMenuItem.Name = "векторнаяГрафикаToolStripMenuItem";
             this.векторнаяГрафикаToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
             this.векторнаяГрафикаToolStripMenuItem.Text = "Векторная графика";
-            this.векторнаяГрафикаToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.векторнаяГрафикаToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // цветовыеМоделиToolStripMenuItem
             // 
             this.цветовыеМоделиToolStripMenuItem.Name = "цветовыеМоделиToolStripMenuItem";
             this.цветовыеМоделиToolStripMenuItem.Size = new System.Drawing.Size(272, 22);
             this.цветовыеМоделиToolStripMenuItem.Text = "Цветовые модели";
-            this.цветовыеМоделиToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.цветовыеМоделиToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // практическиеРаботыToolStripMenuItem
             // 
@@ -127,28 +127,28 @@
             this.gimpПрактическаяРабота1ToolStripMenuItem.Name = "gimpПрактическаяРабота1ToolStripMenuItem";
             this.gimpПрактическаяРабота1ToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
             this.gimpПрактическаяРабота1ToolStripMenuItem.Text = "Gimp. Практическая работа №1";
-            this.gimpПрактическаяРабота1ToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.gimpПрактическаяРабота1ToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // gimpПрактическаяРабота2ToolStripMenuItem
             // 
             this.gimpПрактическаяРабота2ToolStripMenuItem.Name = "gimpПрактическаяРабота2ToolStripMenuItem";
             this.gimpПрактическаяРабота2ToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
             this.gimpПрактическаяРабота2ToolStripMenuItem.Text = "Gimp. Практическая работа №2";
-            this.gimpПрактическаяРабота2ToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.gimpПрактическаяРабота2ToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // inkscapeПрактическаяРабота1ToolStripMenuItem
             // 
             this.inkscapeПрактическаяРабота1ToolStripMenuItem.Name = "inkscapeПрактическаяРабота1ToolStripMenuItem";
             this.inkscapeПрактическаяРабота1ToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
             this.inkscapeПрактическаяРабота1ToolStripMenuItem.Text = "Inkscape. Практическая работа №1";
-            this.inkscapeПрактическаяРабота1ToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.inkscapeПрактическаяРабота1ToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // inkscapeПрактическаяРабота2ToolStripMenuItem
             // 
             this.inkscapeПрактическаяРабота2ToolStripMenuItem.Name = "inkscapeПрактическаяРабота2ToolStripMenuItem";
             this.inkscapeПрактическаяРабота2ToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
             this.inkscapeПрактическаяРабота2ToolStripMenuItem.Text = "Inkscape. Практическая работа №2";
-            this.inkscapeПрактическаяРабота2ToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.inkscapeПрактическаяРабота2ToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // самостоятельныеРаботыToolStripMenuItem
             // 
@@ -165,21 +165,21 @@
             this.векторныйРедакторInkscapeToolStripMenuItem.Name = "векторныйРедакторInkscapeToolStripMenuItem";
             this.векторныйРедакторInkscapeToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.векторныйРедакторInkscapeToolStripMenuItem.Text = "Векторный редактор Inkscape";
-            this.векторныйРедакторInkscapeToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.векторныйРедакторInkscapeToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // работаВAdobePhotoshopToolStripMenuItem
             // 
             this.работаВAdobePhotoshopToolStripMenuItem.Name = "работаВAdobePhotoshopToolStripMenuItem";
             this.работаВAdobePhotoshopToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.работаВAdobePhotoshopToolStripMenuItem.Text = "Работа в Adobe Photoshop";
-            this.работаВAdobePhotoshopToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.работаВAdobePhotoshopToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // растровыйРедакторGIMPToolStripMenuItem
             // 
             this.растровыйРедакторGIMPToolStripMenuItem.Name = "растровыйРедакторGIMPToolStripMenuItem";
             this.растровыйРедакторGIMPToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.растровыйРедакторGIMPToolStripMenuItem.Text = "Растровый редактор GIMP";
-            this.растровыйРедакторGIMPToolStripMenuItem.Click += new System.EventHandler(this.openPdfToolStripClick);
+            this.растровыйРедакторGIMPToolStripMenuItem.Click += new System.EventHandler(this.OpenPdfToolStripClick);
             // 
             // тестыToolStripMenuItem
             // 
@@ -213,7 +213,7 @@
             this.button1.TabIndex = 4;
             this.toolTip1.SetToolTip(this.button1, "Развернуть");
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -226,7 +226,7 @@
             this.button2.TabIndex = 5;
             this.toolTip2.SetToolTip(this.button2, "Назад");
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
@@ -239,21 +239,21 @@
             this.button3.TabIndex = 6;
             this.toolTip3.SetToolTip(this.button3, "Свернуть");
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // тест1ToolStripMenuItem
             // 
             this.тест1ToolStripMenuItem.Name = "тест1ToolStripMenuItem";
             this.тест1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.тест1ToolStripMenuItem.Text = "Тест №1";
-            this.тест1ToolStripMenuItem.Click += new System.EventHandler(this.тест1ToolStripMenuItem_Click);
+            this.тест1ToolStripMenuItem.Click += new System.EventHandler(this.Тест1ToolStripMenuItem_Click);
             // 
             // тест2ToolStripMenuItem
             // 
             this.тест2ToolStripMenuItem.Name = "тест2ToolStripMenuItem";
             this.тест2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.тест2ToolStripMenuItem.Text = "Тест №2";
-            this.тест2ToolStripMenuItem.Click += new System.EventHandler(this.тест2ToolStripMenuItem_Click);
+            this.тест2ToolStripMenuItem.Click += new System.EventHandler(this.Тест2ToolStripMenuItem_Click);
             // 
             // Form1
             // 

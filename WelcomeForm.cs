@@ -11,7 +11,7 @@ namespace Компьютерная_графика2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             StaticForms.mainForm.StartPosition = FormStartPosition.Manual;
             StaticForms.mainForm.Location = new Point(Location.X, Location.Y);

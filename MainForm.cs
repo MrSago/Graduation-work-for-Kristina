@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -11,7 +12,7 @@ namespace Компьютерная_графика2
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             StaticForms.form1.StartPosition = FormStartPosition.Manual;
             StaticForms.form1.Location = new Point(Location.X, Location.Y);
@@ -20,11 +21,11 @@ namespace Компьютерная_графика2
 
             Hide();
             StaticForms.form1.ShowDialog();
-            
+
             Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             StaticForms.form2.StartPosition = FormStartPosition.Manual;
             StaticForms.form2.Location = new Point(Location.X, Location.Y);
@@ -35,7 +36,7 @@ namespace Компьютерная_графика2
             Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
             StaticForms.form3.StartPosition = FormStartPosition.Manual;
             StaticForms.form3.Location = new Point(Location.X, Location.Y);
@@ -46,7 +47,7 @@ namespace Компьютерная_графика2
             Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4_Click(object sender, EventArgs e)
         {
             StaticForms.form4.StartPosition = FormStartPosition.Manual;
             StaticForms.form4.Location = new Point(Location.X, Location.Y);
@@ -58,3 +59,4 @@ namespace Компьютерная_графика2
         }
     }
 }
+

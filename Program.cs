@@ -1,11 +1,12 @@
-﻿using System;
+﻿
+using System;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
 namespace Компьютерная_графика2
 {
-    static class StaticForms
+    internal static class StaticForms
     {
         public static WelcomeForm welcomeForm;
         public static MainForm mainForm;
@@ -63,3 +64,4 @@ namespace Компьютерная_графика2
         }
     }
 }
+

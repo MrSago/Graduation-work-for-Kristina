@@ -1,41 +1,50 @@
-﻿using System;
-using System.IO;
+﻿
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
 namespace Компьютерная_графика2
 {
-    public struct Question
+    public struct SQuestion
     {
-        public String question { get; set; }
-        public List<String> answers { get; set; }
-        public Int32 trueAnswer { get; set; }
-        public Int32 checkedAnswer { get; set; }
+        public string Question { get; set; }
+        public List<string> Answers { get; set; }
+        public int TrueAnswer { get; set; }
+        public int CheckedAnswer { get; set; }
     }
 
     interface ITestClass
     {
-        String FileName { get; }
-        Question[] ListQuestions { get; }
-        void CheckAnswer(Int32 id, Int32 answer);
-        String GetResult();
+        string FileName { get; }
+        SQuestion[] ListQuestions { get; }
+        void CheckAnswer(int id, int answer);
+        string GetResult();
     }
 
     class TestClass : ITestClass
     {
-        public String FileName { get; }
+        public string FileName { get; }
 
-        public Question[] ListQuestions { get; }
+        public SQuestion[] ListQuestions { get; }
 
-        public TestClass(String fileName)
+        public TestClass(string fileName)
         {
-            List<Question> NewListQuestions = new List<Question>();
-            StreamReader streamReader = new StreamReader($"{Directory.GetCurrentDirectory()}\\Resources\\{fileName}", Encoding.UTF8);
+            List<SQuestion> NewListQuestions = new List<SQuestion>();
+            StreamReader streamReader;
+            try
+            {
+                streamReader = new StreamReader($"{Directory.GetCurrentDirectory()}\\Resources\\{fileName}", Encoding.UTF8);
+            }
+            catch (Exception)
+            {
+                throw new Exception("Can't read file.");
+            }
             FileName = fileName;
-            String str = streamReader.ReadLine();
+            string str = streamReader.ReadLine();
 
-            try 
+            try
             {
                 if (str != "[START]")
                 {
@@ -59,20 +68,20 @@ namespace Компьютерная_графика2
             {
                 if (str == "[QS]")
                 {
-                    Question question = new Question();
-                    List<String> answers = new List<String>();
+                    SQuestion question = new SQuestion();
+                    List<string> answers = new List<string>();
 
                     str = streamReader.ReadLine();
 
                     do
                     {
-                        String paramStr = str[0].ToString() + str[1].ToString();
-                        String prm = str.Substring(4, str.Length - 5);
+                        string paramStr = str[0].ToString() + str[1].ToString();
+                        string prm = str.Substring(4, str.Length - 5);
 
                         switch (paramStr)
                         {
                             case "$Q":
-                                question.question = prm;
+                                question.Question = prm;
                                 break;
 
                             case "$A":
@@ -80,7 +89,7 @@ namespace Компьютерная_графика2
                                 break;
 
                             case "$T":
-                                question.trueAnswer = Int16.Parse(prm);
+                                question.TrueAnswer = short.Parse(prm);
                                 break;
 
                             default:
@@ -89,17 +98,17 @@ namespace Компьютерная_графика2
 
                         str = streamReader.ReadLine();
 
-                    } while (!String.IsNullOrEmpty(str) && str != "[QE]");
+                    } while (!string.IsNullOrEmpty(str) && str != "[QE]");
 
-                    question.checkedAnswer = -1;
-                    question.answers = answers;
+                    question.CheckedAnswer = -1;
+                    question.Answers = answers;
 
                     NewListQuestions.Add(question);
                 }
 
                 str = streamReader.ReadLine();
 
-            } while (!String.IsNullOrEmpty(str) && str != "[END]");
+            } while (!string.IsNullOrEmpty(str) && str != "[END]");
 
             streamReader.Close();
 
@@ -107,24 +116,25 @@ namespace Компьютерная_графика2
             NewListQuestions.Clear();
         }
 
-        public void CheckAnswer(Int32 id, Int32 answer)
+        public void CheckAnswer(int id, int answer)
         {
-            ListQuestions[id].checkedAnswer = answer;
+            ListQuestions[id].CheckedAnswer = answer;
         }
 
-        public String GetResult()
+        public string GetResult()
         {
-            Int32 countTrueAnswers = 0;
+            int countTrueAnswers = 0;
 
-            for (Int32 id = 0; id < ListQuestions.Length; ++id)
+            foreach (SQuestion q in ListQuestions)
             {
-                if (ListQuestions[id].trueAnswer == ListQuestions[id].checkedAnswer)
+                if (q.TrueAnswer == q.CheckedAnswer)
                 {
                     ++countTrueAnswers;
                 }
             }
 
-            return (countTrueAnswers.ToString() + '/' + ListQuestions.Length.ToString());
+            return $"{countTrueAnswers}/{ListQuestions.Length}";
         }
     }
 }
+
