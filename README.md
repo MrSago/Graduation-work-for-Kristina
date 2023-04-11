@@ -1,4 +1,4 @@
 ﻿
 #### Graduation work for Kristina
-This is a teaching window program with testings.
+This is a teaching window program with quizzes.
 
